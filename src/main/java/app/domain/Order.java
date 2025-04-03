@@ -7,6 +7,7 @@ public class Order {
 
     private int id;
     private List<Dish> dishes;
+    private boolean active;
 
     public int getId() {
         return id;
@@ -24,6 +25,10 @@ public class Order {
         this.dishes = dishes;
     }
 
+    public boolean isActive() { return active; }
+
+    public void setActive(boolean active) { this.active = active; }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -38,7 +43,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return String.format("Заказ: ид - %d, список блюд - %s.",
-                id, dishes);
+        return String.format("Заказ: ид - %d, список блюд - %s, активен - %b.",
+                id, dishes, active);
     }
 }
