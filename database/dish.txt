@@ -1,0 +1,21 @@
+[ {
+  "id" : 1,
+  "title" : "Пица",
+  "price" : 90.0,
+  "active" : false
+}, {
+  "id" : 2,
+  "title" : "Оливье",
+  "price" : 230.0,
+  "active" : true
+}, {
+  "id" : 3,
+  "title" : "Котлета по Киевски",
+  "price" : 200.0,
+  "active" : true
+}, {
+  "id" : 4,
+  "title" : "Омлет",
+  "price" : 280.0,
+  "active" : true
+} ]

@@ -9,6 +9,18 @@ public class Dish {
     private double price;
     private boolean active;
 
+    public Dish() { }
+
+    public Dish(String title, double price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    public Dish(int id, double price) {
+        this.id = id;
+        this.price = price;
+    }
+
     public int getId() {
         return id;
     }
