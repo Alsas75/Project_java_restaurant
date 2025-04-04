@@ -1,13 +1,17 @@
 package app.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class Order {
 
     private int id;
-    private List<Dish> dishes;
     private boolean active;
+    private List<Dish> dishes = new ArrayList<>();
+
+    public Order() {
+    }
 
     public int getId() {
         return id;
